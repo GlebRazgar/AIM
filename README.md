@@ -1,2 +1,2 @@
 # Coin
-Inquiry into Chain of Interpretability
+Chain of Interpretability
