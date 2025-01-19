@@ -4,6 +4,16 @@ from PIL import Image
 import os
 from tqdm import tqdm
 import json
+import torchvision
+
+# Create a data loader
+
+def data_loader():
+    imagenet_data = torchvision.datasets.ImageNet('/SAE/dataset/imagenet-mini/')
+    data_loader = torch.utils.data.DataLoader(imagenet_data,
+                                          batch_size=8,
+                                          shuffle=True,
+                                          num_workers=1)
 
 def load_model():
     # Load standard ResNet18 with pretrained weights from torchvision

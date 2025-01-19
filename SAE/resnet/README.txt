@@ -1,9 +1,9 @@
-# Download the tinyimagenet
+# Res Net architecture
 
 Aim: Train SAE on the activateions of resnet during inference.
 
-1. Get the resnet to do inference on the tiny imagenet-200
-2. Whilst its doing inference, train the SAE
+1. Get the resnet to do inference on the imagenet
+2. Whilst its doing inference, freez it and train the SAE
 
 
 

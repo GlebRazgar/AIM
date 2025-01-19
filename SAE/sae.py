@@ -1,7 +1,7 @@
 import torch
 import math
-from PyUnity.agents.common import gdn
 from torch import nn
+import gdn
 
 
 class SparseAutoencoder(nn.Module):
