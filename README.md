@@ -7,6 +7,14 @@ This project combines the automation and agency of MAIA ( Multimodal Automated I
 
 For controlled generation of synthetic data for in the loop hypothesis testing we replace the diffusion based synthetic data generator in MAIA with the Unity gaming engine for more phyiscally grounded generation. 
 
+Organisation
+---
+
+This repo has 3 branches, 
+1. The main branch contains the Unity scene generation tools and assets. 
+2. The Gemini branch contains the MAIA implementation with Gemini backbone. 
+3. The SAE branch contains the sparse autoencoder.  
+
 
 Installation instructions for Maia
 ---
