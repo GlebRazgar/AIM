@@ -345,7 +345,7 @@ class DSIAC_validator(DetectionValidator):  # pass as argument 'trainer' when ca
     def extract_features(self, model, img, layer_index=20):
         global intermediate_features
         intermediate_features = []
-        hook = model.model[layer_index].register_forward_hook(self.hook_fn)
+        hook = model.model[layer_index].register_forward_hook(self.hook_fn) # REPLACE WITH RESNET + INDEX
         print(hook)
         # with torch.no_grad():  # prevents storing any gradients, so not good for optimising input
         x = model(img)
