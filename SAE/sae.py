@@ -202,11 +202,11 @@ class SparseAutoencoder5(nn.Module):
         self.gdn1 = gdn.GDN(num_filters)
         self.conv2 = nn.Conv2d(num_filters, 2*num_filters, 5, stride=1, padding=2)
         self.gdn2 = gdn.GDN(2*num_filters)
-        self.conv3 = nn.Conv2d(2*num_filters, 2*num_filters, 5, stride=2, padding=2)
+        self.conv3 = nn.Conv2d(2*num_filters, 2*num_filters, 5, stride=1, padding=2)
         #self.gdn3 = gdn.GDN(num_filters)
         '''self.conv4 = nn.Conv2d(num_filters, num_filters, 5, stride=2, padding=2)'''
 
-        self.deconv1 = nn.ConvTranspose2d(2*num_filters, 2*num_filters, 5, stride=2, padding=2, output_padding=1)
+        self.deconv1 = nn.ConvTranspose2d(2*num_filters, 2*num_filters, 5, stride=1, padding=2, output_padding=1)
         self.igdn1 = gdn.GDN(2*num_filters, inverse=True)
         self.deconv2 = nn.ConvTranspose2d(2*num_filters, num_filters, 5, stride=1, padding=2, output_padding=0)
         self.igdn2 = gdn.GDN(num_filters, inverse=True)
