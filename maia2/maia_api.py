@@ -31,6 +31,17 @@ sys.path.append('./synthetic-neurons-dataset/')
 import synthetic_neurons
 import clip
 import torch.nn.functional as F
+from sae import SparseAutoencoder, SparseAutoencoder2, SparseAutoencoder3, SparseAutoencoder4, SparseAutoencoder5, SparseAutoencoder7, SparseAutoencoder8, SparseAutoencoder9
+
+
+def save_checkpoint(state, filename="my_checkpoint.pth"):
+    print("=> Saving checkpoint")
+    torch.save(state, filename)
+
+
+def load_checkpoint(checkpoint, model):
+    print("=> Loading checkpoint")
+    model.load_state_dict(checkpoint["state_dict"])
 
 class System:
     """
@@ -61,6 +72,9 @@ class System:
         of the neuron over that image, that highlights the regions of the image where the activations 
         are higher (encoded into a Base64 string).
     """
+
+
+
     def __init__(self, neuron_num: int, layer: str, model_name: str, device: str, thresholds=None):
         """
         Initializes a neuron object by specifying its number and layer location and the vision model that the neuron belongs to.
@@ -78,7 +92,13 @@ class System:
         self.neuron_num = neuron_num
         self.layer = layer
         self.device = torch.device(f"cuda:{device}" if torch.cuda.is_available() else "cpu")
-        self.model_name = model_name      
+        self.model_name = model_name
+
+        self.sae = SparseAutoencoder4(input_channels=64).to(self.device)
+        self.LOAD_SAE_MODEL_FILE = ''
+        #load_checkpoint(torch.load(self.LOAD_SAE_MODEL_FILE + f".pth", map_location=torch.device('cpu')), self.sae)
+        #self.sae.to(self.device)
+
         self.preprocess = None
         if 'dino' in model_name or 'resnet' in model_name:
             self.preprocess = self.preprocess_imagenet
@@ -181,6 +201,7 @@ class System:
         with Trace(self.model, self.layer) as ret:
             _ = self.model(image)
             hiddens = ret.output
+            hiddens, reconstructed_feature = self.sae(hiddens) #
 
         if "dino" in self.model_name:
             hiddens = self.spatialize_vit_mlp(hiddens)
@@ -189,6 +210,7 @@ class System:
         activations = hiddens.permute(0, 2, 3, 1).reshape(-1, channels)
         pooled, _ = hiddens.view(batch_size, channels, -1).max(dim=2)
         neuron_activation_map = hiddens[:, self.neuron_num, :, :]
+
         return(pooled[:,self.neuron_num], neuron_activation_map)
     
     def calc_class(self, image: torch.Tensor)->Tuple[int, torch.Tensor]:
