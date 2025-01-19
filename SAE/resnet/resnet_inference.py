@@ -8,11 +8,20 @@ import json
 def load_model():
     # Load standard ResNet18 with pretrained weights from torchvision
     model = models.resnet18(weights=models.ResNet18_Weights.IMAGENET1K_V1)
-    model.eval()
+    # Get the class mapping
+    weights = models.ResNet18_Weights.IMAGENET1K_V1
+    categories = weights.meta["categories"]
+    class_labels = weights.meta["categories"]  # These are human-readable names
     
+    # Create mappings
+    idx_to_label = {i: label for i, label in enumerate(class_labels)}
+    label_to_idx = {label: i for i, label in enumerate(class_labels)}
+    
+    model.eval()
     if torch.cuda.is_available():
         model = model.cuda()
-    return model
+    return model, idx_to_label
+
 
 def process_image(image_path):
     # Standard ImageNet preprocessing
@@ -29,15 +38,13 @@ def process_image(image_path):
     image = Image.open(image_path).convert('RGB')
     return transform(image).unsqueeze(0)
 
+
 def run_inference():
-    model = load_model()
+    model, idx_to_label = load_model()
     
-    # Path to ImageNet-mini training data
-    # Updated path to ImageNet-mini training data
     data_path = os.path.join('..', 'dataset', 'imagenet-mini', 'train')
     if not os.path.exists(data_path):
         raise FileNotFoundError(f"Dataset not found at {data_path}. Please run download_data.py first.")
-
 
     # Store results
     results = {}
@@ -46,7 +53,11 @@ def run_inference():
     class_folders = os.listdir(data_path)
     for class_folder in tqdm(class_folders, desc="Processing classes"):
         class_path = os.path.join(data_path, class_folder)
-        results[class_folder] = {'total': 0, 'correct': 0}
+        results[class_folder] = {
+            'total': 0, 
+            'correct': 0,
+            'predictions': []
+        }
         
         # Process each image in the class folder
         for image_file in os.listdir(class_path):
@@ -66,17 +77,33 @@ def run_inference():
                     output = model(input_tensor)
                     _, predicted = output.max(1)
                 
+                predicted_idx = predicted.item()
+                predicted_label = idx_to_label[predicted_idx]
+                
                 # Update results
                 results[class_folder]['total'] += 1
-                # ImageNet classes are numbered from 0-999
-                if predicted.item() == int(class_folder[1:].split('_')[0]):
+                
+                # Check if the WNID in the image filename matches the class folder
+                # Extract WNID from image filename (assuming format: nXXXXXXXX_XXXX.JPEG)
+                image_wnid = image_file.split('_')[0]
+                is_correct = (image_wnid == class_folder)
+                
+                if is_correct:
                     results[class_folder]['correct'] += 1
+                
+                # Store prediction details
+                results[class_folder]['predictions'].append({
+                    'image': image_file,
+                    'predicted': predicted_label,
+                    'correct': is_correct,
+                    'folder_wnid': class_folder  # Add this for debugging
+                })
                     
             except Exception as e:
                 print(f"Error processing {image_path}: {str(e)}")
                 continue
-    
-    # Calculate and print results
+
+    # Calculate and print summary
     total_images = sum(d['total'] for d in results.values())
     total_correct = sum(d['correct'] for d in results.values())
     
@@ -85,9 +112,7 @@ def run_inference():
     print(f"Total correct predictions: {total_correct}")
     print(f"Accuracy: {(total_correct/total_images)*100:.2f}%")
     
-    # Save detailed results to file
     with open('inference_results.json', 'w') as f:
         json.dump(results, f, indent=4)
-
 if __name__ == "__main__":
     run_inference()
