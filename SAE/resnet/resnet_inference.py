@@ -36,7 +36,7 @@ def load_model():
 def process_image(image_path):
     # Standard ImageNet preprocessing
     transform = transforms.Compose([
-        transforms.Resize(256),
+        transforms.Resize(224),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
         transforms.Normalize(

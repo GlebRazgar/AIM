@@ -157,35 +157,44 @@ class sae_trainer():  # pass as argument 'trainer' when calling model.train()
     #     return ds
 
 
-    def visualize_activations(self, features, sparse_features, epoch):
+    def visualize_activations(self, features, sparse_features, input_image, epoch):
         # Create directory for saving visualizations
         os.makedirs("results/activations", exist_ok=True)
         
-        # 1. Feature Maps Visualization
-        n_features = min(16, sparse_features.shape[1])  # Show first 16 features or less
-        fig, axes = plt.subplots(4, 4, figsize=(12, 12))
-        for idx in range(n_features):
-            i, j = idx//4, idx%4
-            feature_map = sparse_features[0, idx].detach().cpu().numpy()
-            axes[i, j].imshow(feature_map, cmap='viridis')
-            axes[i, j].axis('off')
-        plt.suptitle(f'SAE Feature Activations - Epoch {epoch}')
+        # Process input image (taking second image from batch instead of first)
+        img = input_image[1, 0, :, :].cpu().detach().numpy()  # Changed index from 0 to 1
         
-        # Save to wandb and local directory
-        plt.savefig(f'results/activations/features_epoch_{epoch}.png')
+        # Process feature activations (also for second image)
+        feature_maps = sparse_features[1].detach().cpu()  # Changed index from 0 to 1
+        activation_map = torch.mean(feature_maps, dim=0).numpy()
+        
+        # Normalize activation map to [0, 1] range
+        activation_map = (activation_map - activation_map.min()) / (activation_map.max() - activation_map.min() + 1e-8)
+        
+        # Create figure with two subplots side by side
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
+        
+        # Plot original image (using same visualization as in plot_features method)
+        ax1.imshow(img, cmap='gray', vmin=0, vmax=1.0)
+        ax1.set_title('Input Image')
+        ax1.axis('off')
+        
+        # Plot activation map
+        im = ax2.imshow(activation_map, cmap='viridis')
+        ax2.set_title('Average Feature Activation')
+        ax2.axis('off')
+        plt.colorbar(im, ax=ax2)
+        
+        plt.suptitle(f'SAE Activations - Epoch {epoch}')
+        
+        # Save locally and to wandb
+        save_path = f'results/activations/features_epoch_{epoch}.png'
+        plt.savefig(save_path, bbox_inches='tight', dpi=150)
         wandb.log({
-            "feature_maps": wandb.Image(plt.gcf()),
+            "activations": wandb.Image(plt.gcf()),
             "epoch": epoch
         })
         plt.close()
-
-        # 2. Activation Statistics
-        avg_activation = torch.mean(sparse_features, dim=(0,2,3))
-        wandb.log({
-            "activation/mean": wandb.Histogram(avg_activation.detach().cpu().numpy()),
-            "activation/sparsity": (sparse_features == 0).float().mean().item(),
-            "epoch": epoch
-        })
 
     def get_dataloader(self, dataset_path, batch_size=8, rank=0, mode="train"):
         """Construct and return dataloader."""
@@ -352,8 +361,8 @@ class sae_trainer():  # pass as argument 'trainer' when calling model.train()
                 sparse_features_flat[sparse_features_flat >= 1] = 0.9999
                 
                 # Move visualization here, after features are computed
-                if epoch % 1 == 0 and idx == 0:  # Visualize first batch every 2 epochs
-                    self.visualize_activations(features, sparse_features, epoch)
+                if epoch % 1 == 0 and idx == 0:  # Visualize first batch every epoch
+                    self.visualize_activations(features, sparse_features, x, epoch)
                         
                 kl_div = - rho * torch.log(sparse_features_flat / rho) - (1 - rho) * torch.log(
                     (1 - sparse_features_flat) / (1 - rho))
@@ -392,18 +401,23 @@ class sae_trainer():  # pass as argument 'trainer' when calling model.train()
                 "epoch/avg_total_loss": epoch_total_loss / num_batches
             })
 
-            # Save model checkpoint
+            # Save checkpoint with epoch number
             checkpoint = {
                 "state_dict": self.sae.state_dict(),
                 "optimizer": self.optim_sae.state_dict(),
+                "epoch": epoch,
+                "loss": epoch_total_loss / num_batches
             }
             
-            # Save checkpoint both locally and to wandb
-            save_checkpoint(checkpoint, filename=self.SAVE_SAE_MODEL_FILE + f".pth")
-            if (epoch + 1) % 5 == 0:  # Save to wandb every 5 epochs
-                wandb.save(self.SAVE_SAE_MODEL_FILE + f".pth")
+            # Save checkpoint with unique name for each epoch
+            checkpoint_path = f"{self.SAVE_SAE_MODEL_FILE}_epoch_{epoch}.pth"
+            save_checkpoint(checkpoint, filename=checkpoint_path)
+            
+            # Save to wandb every 5 epochs
+            if (epoch + 1) % 5 == 0:
+                wandb.save(checkpoint_path)
 
-            print("Avg loss: ", epoch_total_loss / num_batches)
+            print(f"Avg loss for epoch {epoch}: {epoch_total_loss / num_batches}")
 
         # Close wandb run
         wandb.finish()
