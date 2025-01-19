@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

@@ -1,0 +1,637 @@
+Unity Editor version:    2022.3.5f1 (9674261d40ee)
+Branch:                  2022.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.7.1 (Build 22H221)
+Darwin version:          22.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/smalzard/My project (2)
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52268
+Successfully changed project path to: /Users/smalzard/My project (2)
+/Users/smalzard/My project (2)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8433623296] Host "[IP] 10.154.20.68 [Port] 0 [Flags] 2 [Guid] 726704818 [EditorId] 726704818 [Version] 1048832 [Id] OSXEditor(0,649-KF7JC7XDXG) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8433623296] Host "[IP] 10.154.20.68 [Port] 0 [Flags] 2 [Guid] 726704818 [EditorId] 726704818 [Version] 1048832 [Id] OSXEditor(0,649-KF7JC7XDXG) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 16.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.5f1 (9674261d40ee)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/smalzard/My project (2)/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M2 Pro (high power)
+Metal devices available: 1
+0: Apple M2 Pro (high power)
+Using device Apple M2 Pro (high power)
+Initializing Metal device caps: Apple M2 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56341
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.5f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.003170 seconds.
+- Loaded All Assemblies, in  0.289 seconds
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.137 seconds
+Domain Reload Profiling: 426ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (95ms)
+		LoadAssemblies (133ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (91ms)
+			TypeCache.Refresh (91ms)
+				TypeCache.ScanAssembly (83ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (137ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (103ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (70ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/smalzard/My project (2)/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/smalzard/My project (2)/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+TypeRef ResolutionScope not yet handled (217) for .IMergeView in image /Users/smalzard/My project (2)/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
+Unloading broken assembly Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll, this assembly can cause crashes in the runtime
+- Loaded All Assemblies, in  0.562 seconds
+Refreshing native plugins compatible for Editor in 6.51 ms, found 2 plugins.
+Could not load signature of Unity.PlasticSCM.Editor.Gluon.UpdateReport.UpdateReportDialog:ShowUpdateReport due to: Could not resolve type with token 0100006c from typeref (expected class 'Codice.Client.BaseCommands.ErrorMessage' in assembly 'unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876') assembly:unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876 type:Codice.Client.BaseCommands.ErrorMessage member:(null)
+Could not load signature of Unity.PlasticSCM.Editor.Gluon.UpdateReport.UpdateReportDialog:UpdateUpdateReportList due to: Could not resolve type with token 0100006c from typeref (expected class 'Codice.Client.BaseCommands.ErrorMessage' in assembly 'unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876') assembly:unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876 type:Codice.Client.BaseCommands.ErrorMessage member:(null)
+Could not load signature of Unity.PlasticSCM.Editor.Gluon.UpdateReport.UpdateReportDialog:GetErrorDetailsText due to: Could not resolve type with token 0100006c from typeref (expected class 'Codice.Client.BaseCommands.ErrorMessage' in assembly 'unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876') assembly:unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876 type:Codice.Client.BaseCommands.ErrorMessage member:(null)
+Could not load signature of Unity.PlasticSCM.Editor.Gluon.UpdateReport.UpdateReportDialog:DoErrorDetailsTextArea due to: Could not resolve type with token 0100006c from typeref (expected class 'Codice.Client.BaseCommands.ErrorMessage' in assembly 'unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876') assembly:unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876 type:Codice.Client.BaseCommands.ErrorMessage member:(null)
+Could not load signature of Unity.PlasticSCM.Editor.Gluon.UpdateReport.UpdateReportDialog:Create due to: Could not resolve type with token 0100006c from typeref (expected class 'Codice.Client.BaseCommands.ErrorMessage' in assembly 'unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876') assembly:unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876 type:Codice.Client.BaseCommands.ErrorMessage member:(null)
+Could not load signature of Unity.PlasticSCM.Editor.Developer.UpdateReport.UpdateReportDialog:DoErrorDetailsTextArea due to: Could not resolve type with token 01000163 from typeref (expected class 'Codice.Client.BaseCommands.ReportLine' in assembly 'unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876') assembly:unityplastic, Version=11.0.16.7995, Culture=neutral, PublicKeyToken=a107c9c6e34c8876 type:Codice.Client.BaseCommands.ReportLine member:(null)
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.224 seconds
+Domain Reload Profiling: 786ms
+	BeginReloadAssembly (135ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (370ms)
+		LoadAssemblies (276ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (174ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (224ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (137ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (30ms)
+			ProcessInitializeOnLoadAttributes (91ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.06 seconds
+Refreshing native plugins compatible for Editor in 8.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3091 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (50.6 KB). Loaded Objects now: 3555.
+Memory consumption went from 120.3 MB to 120.3 MB.
+Total: 1.865333 ms (FindLiveObjects: 0.104000 ms CreateObjectMapping: 0.045542 ms MarkObjects: 1.656375 ms  DeleteObjects: 0.059000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/precompiled-assembly-types:Unity.PlasticSCM.Editor: 1ef1cb9af7c7d64bd75bd621bba19cd7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:unityplastic: c88b43b34128fd408eae2a5e7f1e6a51 -> 1b07f3d0d2a7bfbf691bf3af903a2067
+========================================================================
+Received Import Request.
+  Time since last request: 1131495.946933 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio
+  artifactKey: Guid(136ed8b9f4b50e4459db536a02f0f7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio using Guid(136ed8b9f4b50e4459db536a02f0f7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01da382476384c00aafe75977442eb56') in 0.000949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Versatile Studio Assets
+  artifactKey: Guid(57e6e9637c8a24e82ae834b1799b3f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets using Guid(57e6e9637c8a24e82ae834b1799b3f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d47e5681ea59d504052d00865fa834d') in 0.000136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.762323 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/DCbVS_Documentation.pdf
+  artifactKey: Guid(70bd33dc6c53fd74abbf760871b63477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/DCbVS_Documentation.pdf using Guid(70bd33dc6c53fd74abbf760871b63477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc14019c69617fea91880d109708825') in 0.004633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 97.816003 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes
+  artifactKey: Guid(c382ad74842c1d0488df8379aceeb22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes using Guid(c382ad74842c1d0488df8379aceeb22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a208cbbd7a9a2d00092ce002ea33df') in 0.000260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.967199 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night.unity
+  artifactKey: Guid(3dd6985d248a2724291b46a30456112a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night.unity using Guid(3dd6985d248a2724291b46a30456112a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4e4482f13f12505fc81aa6c5158a69') in 0.000237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 122.161436 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox
+  artifactKey: Guid(c1fc4a58f179c3c4d838938eb67849d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox using Guid(c1fc4a58f179c3c4d838938eb67849d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a86aecef723f52cfa73007edecf9fa7') in 0.000281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.070590 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat
+  artifactKey: Guid(3411f94e3a532654884762b61b7a4d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat using Guid(3411f94e3a532654884762b61b7a4d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b48108a5fb223e4d88450ad00d73f5a') in 0.206639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 125.004571 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_interior.mat
+  artifactKey: Guid(c7040db656dd78e4db434fd7330def51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_interior.mat using Guid(c7040db656dd78e4db434fd7330def51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36fcdb0827446e02f9ae7231ba4f141') in 0.254525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/highrise_facades.mat
+  artifactKey: Guid(c6b94b952e067714f807fc7aeb7cbbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/highrise_facades.mat using Guid(c6b94b952e067714f807fc7aeb7cbbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e884f7fe31ef145d09909f5b946f022') in 0.206206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/highway_wall.mat
+  artifactKey: Guid(d6de95fc1051f9e40a1c2b8cfada2c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/highway_wall.mat using Guid(d6de95fc1051f9e40a1c2b8cfada2c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb1e06a3f1478659e6efadf82ce478a') in 0.127643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/orange_light.mat
+  artifactKey: Guid(faba0caff81e6d041a9f29d7045d39bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/orange_light.mat using Guid(faba0caff81e6d041a9f29d7045d39bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c0d12f007aba6e8b048fe2d6b39624') in 0.261856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 30.195436 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/props_main.mat
+  artifactKey: Guid(bcf074209a5884843b7c5ae3c635ea8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/props_main.mat using Guid(bcf074209a5884843b7c5ae3c635ea8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d7871e44bdd3f9487f47346d2b7e2e0') in 0.011425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.153566 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/Materials/side_light_mat.mat
+  artifactKey: Guid(62fee107676b34c048ca2af77c5a77f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/Materials/side_light_mat.mat using Guid(62fee107676b34c048ca2af77c5a77f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e1f62c26528a2280908804510498d2') in 0.117185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/white_light.mat
+  artifactKey: Guid(a1910494df7cf7647bc9378df1e93e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/white_light.mat using Guid(a1910494df7cf7647bc9378df1e93e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0196a285a14bfc108bbbd2a2b7ee0b12') in 0.006923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/vegetation_main.mat
+  artifactKey: Guid(9413168c9f855e34dbc2ac601af593fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/vegetation_main.mat using Guid(9413168c9f855e34dbc2ac601af593fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e527aaf1c477a19564ca4f7ee28d55e0') in 0.299809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 51.982004 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_bases.mat
+  artifactKey: Guid(7304ae2ab1b71784c9b6e3e785e4d869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/building_bases.mat using Guid(7304ae2ab1b71784c9b6e3e785e4d869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc52e8291ca56d2147ed21be2e600b33') in 0.013129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_square.mat
+  artifactKey: Guid(614dd1ad77a3649498945301458c6489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_square.mat using Guid(614dd1ad77a3649498945301458c6489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d71d224389e0591f479311ac8c43ccb') in 0.270389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2-5_tracks.mat
+  artifactKey: Guid(fd9c9ee73e2d66143b28564b9e869f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2-5_tracks.mat using Guid(fd9c9ee73e2d66143b28564b9e869f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb3975c618c59923ae20d8d8918fb0b') in 0.016422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat
+  artifactKey: Guid(48bf040ff1590a74782bf0210962cdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_extra.mat using Guid(48bf040ff1590a74782bf0210962cdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4bd26046b979c5ad1347d2385befd65') in 0.016934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2_tracks.mat
+  artifactKey: Guid(f96faff657ba0a54d8392a93c22371a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Materials/asphalt_2_tracks.mat using Guid(f96faff657ba0a54d8392a93c22371a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328fe40df09455abfe81e1610c4fa252') in 0.015036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 702.631224 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/highway_support.fbx
+  artifactKey: Guid(3e4c02719a29aca4092dd29f07fc1a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/highway_support.fbx using Guid(3e4c02719a29aca4092dd29f07fc1a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae894ef242339eb31be4c9dbf3d5de65') in 0.147623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.816176 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2-5_tracks.png
+  artifactKey: Guid(7d33609f429455d42be75b02b8c8d6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2-5_tracks.png using Guid(7d33609f429455d42be75b02b8c8d6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5165263c421d698652522efa1239ca') in 0.025466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square.png
+  artifactKey: Guid(d9e79842697afca42aa92641c075d086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square.png using Guid(d9e79842697afca42aa92641c075d086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b757099947b5767ce2abd83170e653') in 0.010087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_bases.png
+  artifactKey: Guid(b60689b53292d834b9128f0de5b1fc20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_bases.png using Guid(b60689b53292d834b9128f0de5b1fc20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1341f9e9e5053116db40f7613ec69238') in 0.007729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_bases_nm.png
+  artifactKey: Guid(6419dd05e3e13344db7c4d09e2d64caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/building_bases_nm.png using Guid(6419dd05e3e13344db7c4d09e2d64caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b69211619369fc9787733747e6fb47e') in 0.045416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra.png
+  artifactKey: Guid(559fde5e570141e4c8fcc6f96cd94dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra.png using Guid(559fde5e570141e4c8fcc6f96cd94dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6670d254a05844c214213655d364270e') in 0.010749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks.png
+  artifactKey: Guid(ec737a25d469efb46a04424a34accbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks.png using Guid(ec737a25d469efb46a04424a34accbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3128715f1b3e9f057c85faca98a2480') in 0.012335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2-5_tracks_oc.png
+  artifactKey: Guid(4f5f5a0560eba0742947e46a123c71be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2-5_tracks_oc.png using Guid(4f5f5a0560eba0742947e46a123c71be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb4370dd281c28d12106e93cd7e872e') in 0.011776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks_oc.png
+  artifactKey: Guid(b969d0dc22f81db488bd9863d7241168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks_oc.png using Guid(b969d0dc22f81db488bd9863d7241168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec7b86456cd9acc7d5562310d45a039') in 0.009710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra_oc.png
+  artifactKey: Guid(e00f5dda120cb6641bdff9932ba00586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_extra_oc.png using Guid(e00f5dda120cb6641bdff9932ba00586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6928e76ac5cb8b23eba6f5a27df9a93') in 0.011048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2_tracks.png
+  artifactKey: Guid(971d7186034e62b48b9146a4220de52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2_tracks.png using Guid(971d7186034e62b48b9146a4220de52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b07c06a13f65a905aa8bb9e99fd5f4c') in 0.009318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_small.fbx
+  artifactKey: Guid(a4e2ff6da4c024245b3cb43a957e260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_small.fbx using Guid(a4e2ff6da4c024245b3cb43a957e260e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc47cc9d6b4b935e8cb3e10083eb326') in 0.028733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2_tracks_oc.png
+  artifactKey: Guid(42c5e076ff42bd1469c4a4633491fda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_2_tracks_oc.png using Guid(42c5e076ff42bd1469c4a4633491fda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65dfd095fb4dc3c4754fd9ee886afe1') in 0.013705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks_nm.png
+  artifactKey: Guid(5ee7d769b5b730f48b8cb9dec69b64fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_4_tracks_nm.png using Guid(5ee7d769b5b730f48b8cb9dec69b64fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5adf30c7ff9b4396a3502fe26a2bf140') in 0.012689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_mid.fbx
+  artifactKey: Guid(29a8981c6f21b6345a1737aa4b906a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Models/basement_mid.fbx using Guid(29a8981c6f21b6345a1737aa4b906a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7222f5b3e772ac252c8dc8862a51a8d1') in 0.020758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_highway.png
+  artifactKey: Guid(daf1e92c0326ff746956666cff7510e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_highway.png using Guid(daf1e92c0326ff746956666cff7510e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa9265243eee9268b6b7679b1ed6ea1') in 0.018007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square_nm.png
+  artifactKey: Guid(bb075db2b2e92c34e9a0edbc160d738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Textures/asphalt_square_nm.png using Guid(bb075db2b2e92c34e9a0edbc160d738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9b0d6f215c73c4a6ba8f8a85b2f466') in 0.014336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 61.791798 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat
+  artifactKey: Guid(3411f94e3a532654884762b61b7a4d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat using Guid(3411f94e3a532654884762b61b7a4d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4cba3e166be8e235f661bf5ed220d6') in 0.030608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 263.646110 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat
+  artifactKey: Guid(3411f94e3a532654884762b61b7a4d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/SkyBox/CustomSky.mat using Guid(3411f94e3a532654884762b61b7a4d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef9db84bd12b2179a29aa185979bf13') in 0.116569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 31.682719 seconds.
+  path: Assets/Azerilo/Demo Assets/GroundMaterial.mat
+  artifactKey: Guid(595dd5aee4a95634385fd1fbf7216b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Demo Assets/GroundMaterial.mat using Guid(595dd5aee4a95634385fd1fbf7216b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2da62d1a0bd8a62c88c648f54027636') in 0.150213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.598846 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Mesh
+  artifactKey: Guid(9986718c1509e0246880a2a2ac03e80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Mesh using Guid(9986718c1509e0246880a2a2ac03e80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b87a79e70c962cff308efffc093f69') in 0.000234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.171016 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Mesh/Car_NO.1201.fbx
+  artifactKey: Guid(1e4c2f610722651479daaae54d817d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Mesh/Car_NO.1201.fbx using Guid(1e4c2f610722651479daaae54d817d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acfc57c48022aa0355928cfae565a769') in 0.380784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 109
+========================================================================
+Received Import Request.
+  Time since last request: 10.024180 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene/LightingData.asset
+  artifactKey: Guid(ad9d0f39e150d374190e26cd01ef2bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene/LightingData.asset using Guid(ad9d0f39e150d374190e26cd01ef2bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Lighting data asset ‘LightingData’ is incompatible with the current Unity version. Please use Generate Lighting to rebuild the lighting data. Realtime Global Illumination cannot be used until the lighting data is rebuilt.
+ -> (artifact id: 'aca6972d4e7872daf9eb0d1f72a3be43') in 0.001923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003563 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene/ReflectionProbe-0.exr
+  artifactKey: Guid(fab106c77e99e5e4aa5240e0900692ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene/ReflectionProbe-0.exr using Guid(fab106c77e99e5e4aa5240e0900692ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696cbce684d9e6fa0f12c36415c1291a') in 0.053337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.278037 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene.unity
+  artifactKey: Guid(ed6884c73bdf2504495ab340829a5a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene.unity using Guid(ed6884c73bdf2504495ab340829a5a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a3a4f2d656d39c45d1a7cb7e2501b4') in 0.000271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 120.858609 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene
+  artifactKey: Guid(c87a9f73a45a4db4f9e49c6436a5dd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Scene/Demo Scene using Guid(c87a9f73a45a4db4f9e49c6436a5dd6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785afaf0bddb917629c8a3451de98c51') in 0.000268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.279050 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 1.prefab
+  artifactKey: Guid(8258fdccd226b584b8dc1c7ac1652db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 1.prefab using Guid(8258fdccd226b584b8dc1c7ac1652db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fcdf71c60e52e60c035757a5ea54c1') in 0.128508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 226
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car_NO.1201.prefab
+  artifactKey: Guid(8e4300b7bafcc74418f53c67ca571e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car_NO.1201.prefab using Guid(8e4300b7bafcc74418f53c67ca571e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6949848726b74522b6da4f4809bcbf62') in 0.015575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 109
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 5.prefab
+  artifactKey: Guid(ed7795f4883cb97468521311f1be4e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 5.prefab using Guid(ed7795f4883cb97468521311f1be4e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c954bc4841c3074529c073dbbfa1a0') in 0.019452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 226
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 3.prefab
+  artifactKey: Guid(de53374949c380a43831cdf100ac633d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 3.prefab using Guid(de53374949c380a43831cdf100ac633d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763cc78aaa7be1ec70d6ff85cd64a392') in 0.019052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 226
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Wheel.prefab
+  artifactKey: Guid(15681e041c6a91e4891d5ffc30ddf367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Wheel.prefab using Guid(15681e041c6a91e4891d5ffc30ddf367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b180f04324fd140fa3c88c11d424133') in 0.012787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 4.prefab
+  artifactKey: Guid(28e6efeab80060a44aeb418ac1f92bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Prefab/Car 4.prefab using Guid(28e6efeab80060a44aeb418ac1f92bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f625ae89bcee02128d475718ba886e2f') in 0.018628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 226
+========================================================================
+Received Import Request.
+  Time since last request: 511.164687 seconds.
+  path: Assets/Azerilo/Car Model No.1201 Asset/Mesh/Materials/atlas.mat
+  artifactKey: Guid(cd72e7e23411c104d9c529ec92b2b719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Azerilo/Car Model No.1201 Asset/Mesh/Materials/atlas.mat using Guid(cd72e7e23411c104d9c529ec92b2b719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5403b93506b41231299541b14275ce6') in 0.022035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.796053 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/LightingData.asset
+  artifactKey: Guid(98a20dfe0755490468581b4e910c8a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/LightingData.asset using Guid(98a20dfe0755490468581b4e910c8a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7cb367bcff9bd32337daedd7b9e486f') in 0.105440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 34.129251 seconds.
+  path: Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/LightingData.asset
+  artifactKey: Guid(98a20dfe0755490468581b4e910c8a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Versatile Studio Assets/Demo City By Versatile Studio/Scenes/demo_city_night/LightingData.asset using Guid(98a20dfe0755490468581b4e910c8a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e92a80a2a80fe5ff513527526121c0') in 0.101009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
