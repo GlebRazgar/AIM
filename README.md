@@ -7,7 +7,7 @@ This project combines the automation and agency of MAIA ( Multimodal Automated I
 
 For controlled generation of synthetic data for in the loop hypothesis testing we replace the diffusion based synthetic data generator in MAIA with the Unity gaming engine for more phyiscally grounded generation. 
 
-Overview:  
+Architecture:  
 <img width="550" alt="Screenshot 2025-01-19 at 16 44 34" src="https://github.com/user-attachments/assets/798934ce-2161-48c7-8127-95160fa45bf0" />
 
 Example:  
