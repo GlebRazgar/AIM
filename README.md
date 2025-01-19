@@ -27,3 +27,8 @@ pip install segment-anything
 pip install clip
 pip install accelerate
 ```
+
+Unity Assets
+---
+Scene: https://assetstore.unity.com/packages/3d/environments/urban/demo-city-by-versatile-studio-mobile-friendly-269772 \
+Cars: https://assetstore.unity.com/packages/3d/vehicles/land/hd-low-poly-racing-car-no-1201-118603
