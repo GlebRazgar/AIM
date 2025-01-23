@@ -112,9 +112,9 @@ python main.py --model synthetic_neurons --unit_mode from_file --unit_file_path 
 ```
 
 
-Unity Assets
-If you wish to give it a shot using the game engine you can test it using these assets:
+Unity Assets  
 ---
+If you wish to give it a shot using the game engine you can test it using these assets:  
 Scene: https://assetstore.unity.com/packages/3d/environments/urban/demo-city-by-versatile-studio-mobile-friendly-269772 \
 Cars: https://assetstore.unity.com/packages/3d/vehicles/land/hd-low-poly-racing-car-no-1201-118603
 
