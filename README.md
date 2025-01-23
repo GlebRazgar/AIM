@@ -22,6 +22,7 @@ This repo has 3 branches,
 2. The Gemini branch contains the MAIA implementation with Gemini backbone. 
 3. The SAE branch contains the sparse autoencoder.  
 
+We will merge them into a single branch in a few days to make it more plug and play
 
 Installation instructions for Maia
 ---
@@ -49,18 +50,8 @@ pip install clip
 pip install accelerate
 ```
 
-Unity Assets
-If you wish to give it a shot using the game engine you can test it using these assets:
----
-Scene: https://assetstore.unity.com/packages/3d/environments/urban/demo-city-by-versatile-studio-mobile-friendly-269772 \
-Cars: https://assetstore.unity.com/packages/3d/vehicles/land/hd-low-poly-racing-car-no-1201-118603
 
-download [net-dissect](https://netdissect.csail.mit.edu/) precomputed exemplars:
-```bash
-bash download_exemplars.sh
-```
-
-### Quick Start ###
+## Quick Start ##
 You can run demo experiments on individual units using ```demo.ipynb```:
 \
 \
@@ -120,4 +111,15 @@ You can also use the .json file to run all synthetic neurons (or specify your ow
 python main.py --model synthetic_neurons --unit_mode from_file --unit_file_path ./neuron_indices/
 ```
 
+
+Unity Assets
+If you wish to give it a shot using the game engine you can test it using these assets:
+---
+Scene: https://assetstore.unity.com/packages/3d/environments/urban/demo-city-by-versatile-studio-mobile-friendly-269772 \
+Cars: https://assetstore.unity.com/packages/3d/vehicles/land/hd-low-poly-racing-car-no-1201-118603
+
+download [net-dissect](https://netdissect.csail.mit.edu/) precomputed exemplars:
+```bash
+bash download_exemplars.sh
+```
 
