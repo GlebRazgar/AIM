@@ -1,4 +1,4 @@
-# COIN: (C)hain (O)f (IN)terpretability
+# AIM: Automated Interpretability Modeling
 
 This serves as a toolkit with the aim of automatic interpretability using agents and sparse autoencoders for refined, in the loop, interpretations of neurons. This is the first step towards a pipeline of testing all of the neurons activating for a given input image and chaining the interpretations together to understand the full picture of why a network classified a target input as a specific class. 
 
@@ -65,7 +65,7 @@ jupyter notebook
 ```
 This command will start the Jupyter Notebook server and open the Jupyter Notebook interface in your default web browser. The interface will show all the notebooks, files, and subdirectories in this repo (assuming is was initiated from the maia path). Open ```demo.ipynb``` and proceed according to the instructions.
 
- `demo.ipynb` now supports synthetic neurons. Follow installation instructions at `./synthetic-neurons-dataset/README.md`. After installation is done, you can define COIN to run on synthetic neurons according to the instructions in `demo.ipynb`.
+ `demo.ipynb` now supports synthetic neurons. Follow installation instructions at `./synthetic-neurons-dataset/README.md`. After installation is done, you can define AIM to run on synthetic neurons according to the instructions in `demo.ipynb`.
 
 ### Batch experimentation ###
 To run a batch of experiments, use ```main.py```:
