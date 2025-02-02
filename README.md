@@ -1,4 +1,4 @@
-# AIM: Automated Interpretability Modeling
+# AIM: Automated Interpretability Modelling
 
 This serves as a toolkit with the aim of automatic interpretability using agents and sparse autoencoders for refined, in the loop, interpretations of neurons. This is the first step towards a pipeline of testing all of the neurons activating for a given input image and chaining the interpretations together to understand the full picture of why a network classified a target input as a specific class. 
 
